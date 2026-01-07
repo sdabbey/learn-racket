@@ -6,4 +6,5 @@ Example:
 <pre>
 ```> (string-append "hello" "world")
     "helloworld
+    ```
 </pre>
