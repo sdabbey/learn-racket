@@ -108,3 +108,19 @@ For "not":
 > (not #false)
   #true
 ```
+
+## Predicates: Know Thy Data
+A *predicate* is a function that consumes a value and determines whether or not it belongs to some class of data. For example, the predicate *number?* determines the given value is a number or not:
+```
+> (number? 4)
+ #true
+
+> (number? pi)
+ #true
+
+> (number? #true)
+ #false
+
+> (number? "fortytwo")
+ #false
+```
