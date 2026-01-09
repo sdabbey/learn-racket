@@ -124,3 +124,10 @@ A *predicate* is a function that consumes a value and determines whether or not 
 > (number? "fortytwo")
  #false
 ```
+
+In addition to the predicates above, there are some that distinguish different kinds of numbers. BSL classifies numbers in two ways: *by construction* and *by exactness*.
+**Construction** refers to the familiar sets of numbers: *integer?*, *rational?*, *real?* and *complex?*, but many programming languages, including BSL also choose to use finite approximations to well-known constants, which leads to somewhat surprising results with the *rational?* predicate:
+```
+> (rational? pi)
+  #true
+```
