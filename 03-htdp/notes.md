@@ -44,4 +44,9 @@ Example:
     (sqr len))
 ```
 
-- The last step is to test the function on the examples listed previously.
+- The last step is to test the function on the examples listed previously. This can be done using BSL's in-built testing facility called *check-expect*.
+Example:
+```
+> (check-expect (area-of-square 4) 16)
+> Passed all test
+```
