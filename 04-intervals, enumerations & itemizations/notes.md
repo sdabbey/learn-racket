@@ -47,3 +47,18 @@ cond: found an else clause that isn't the last clause in its cond expression
 ; interpretation: The three strings represent the three possible states that a traffic light may assume.
 ```
 Programming with enumerations is mostly straightforward. The main idea of an *enumeration* is that it defines a collection of data as a **finite** number of pieces of data.
+
+## Intervals
+An **interval** is a description of a class of numbers via boundaries. The simplest interval has two boundaries: left and right.
+- *closed* interval -> The left and right boundary is to be included in the interval. [3, 5]
+- *left-open* interval -> The left boundary is not to be included in the interval. (3, 5]
+- *right-open* interval -> The right boundary is not to be included in the interval. [3, 5)
+- *open* interval -> The boundaries are not to be included. (3, 5)
+Example:
+```
+(define (f y)
+    (cond
+    [(<= 0 y CLOSE) ...]
+    [(<= CLOSE y HEIGHT) ...]
+    [(>= y HEIGHT) ...]))
+```
