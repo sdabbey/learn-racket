@@ -36,3 +36,14 @@ If *else* is used mistakenly in some other *cond* line, BSL signals an error:
     [(< x 10) 30])
 cond: found an else clause that isn't the last clause in its cond expression
 ```
+
+## Enumerations
+**Enumeration** is a data representation in which every possibility is listed. A simple example is a TrafficLight sequence.
+```
+; A TrafficLight is one of the following Strings:
+    - "red"
+    - "green"
+    - "yellow"
+; interpretation: The three strings represent the three possible states that a traffic light may assume.
+```
+Programming with enumerations is mostly straightforward. The main idea of an *enumeration* is that it defines a collection of data as a **finite** number of pieces of data.
