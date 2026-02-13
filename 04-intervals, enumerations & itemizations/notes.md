@@ -63,3 +63,13 @@ Example:
     [(>= y HEIGHT) ...]))
 ```
 
+## Itemizations
+*Itemizations* generalise intervals and enumerations. They allow the combination of any already-defined data classes above with each other and with individual pieces of data.
+Example:
+```
+(define (show x)
+  (cond
+  [(string? x) "Heyo"]
+  [(<= -3 x -1) "Still negative"]
+  [(>= x 0) "positive"]))
+```
